@@ -1,0 +1,14 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, black, purple);
+  color: white;
+}
+.inspiracion {
+  text-align: center;
+}
+.social-icons {
+  justify-content: right;
+}
+.logo-container {
+  text-align: center;
+}
