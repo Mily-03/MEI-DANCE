@@ -45,3 +45,19 @@ body {
   justify-content: right;
   gap: 10px;
 }
+.phone-number {
+  text-align: center;
+}
+.clases {
+  text-align: center;
+}
+.nav-meidance {
+  text-align: center;
+}
+@font-face {
+  font-family: 'Kirsty';
+  src: url('/fonts/Kirsty\ Rg.otf') format('opentype');
+}
+.founder-image {
+ text-align: center;
+}
