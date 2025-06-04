@@ -2,34 +2,46 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white; /* para que el texto se vea sobre fondo oscuro */
+  color: white;
   font-family: Arial, sans-serif;
+}
+.clases {
+  background-color: #000000;
+  color: white;
 }
 .inspiracion {
   text-align: center;
 }
+
 .social-icons {
   justify-content: right;
 }
+
 .logo-container {
   text-align: center;
 }
-.contacto {
+
+.navbar {
   text-align: center;
-  color: white;
-  padding: 40px 20px;
 }
 
-.contacto {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* separación entre ítems */
-  margin-top: 20px;
-  flex-wrap: wrap; /* por si es muy estrecho el espacio */
-}
-.meidance-intro {
+.container {
   background-color: black;
   color: white;
-  padding: 50px 20px;
-  text-align: center;
+}
+
+.meidance-intro {
+  background-color: #000000;
+  color: white;
+}
+.contacto {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  margin: 30px 0;
+}
+.social-icons {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
 }
