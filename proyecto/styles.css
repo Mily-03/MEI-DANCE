@@ -58,3 +58,15 @@ body {
 .founder-image {
  text-align: center;
 }
+.tabla-clases {
+  text-align: center;
+  border-color: white;
+}
+.tabla-clases table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  border-color: white;
+  margin: 0 auto;
+  display: table; 
+}
