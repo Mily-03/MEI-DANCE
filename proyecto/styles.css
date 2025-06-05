@@ -69,4 +69,16 @@ body {
   border-color: white;
   margin: 0 auto;
   display: table; 
+  display: th;
+  display: td;
+}
+.tabla-clases table,
+.tabla-clases th,
+.tabla-clases td {
+  border: 1px solid #D68FF4; /* Cambia el color si deseas */
+  border-collapse: collapse;
+}
+.clase {
+  text-align: center;
+  color: white;
 }
