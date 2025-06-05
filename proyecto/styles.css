@@ -2,10 +2,12 @@ body {
   background-color: black;
   color: white;
 }
+
 .clases {
   background-color: #000000;
   color: white;
 }
+
 .inspiracion {
   text-align: center;
 }
@@ -31,54 +33,66 @@ body {
   background-color: #000000;
   color: white;
 }
+
 .contacto {
   line-height: 1.8;
   letter-spacing: 0.5px;
   word-spacing: 2px;
   margin: 30px 0;
 }
+
 .social-icons {
   display: flex;
   justify-content: right;
   gap: 10px;
 }
+
 .phone-number {
   text-align: center;
 }
+
 .clases {
   text-align: center;
 }
+
 .nav-meidance {
   text-align: center;
 }
+
 @font-face {
   font-family: 'Kirsty';
   src: url('/fonts/Kirsty\ Rg.otf') format('opentype');
 }
+
 .founder-image {
- text-align: center;
+  text-align: center;
 }
+
 .tabla-clases {
   text-align: center;
   border-color: white;
 }
+
 .tabla-clases table {
   width: 100%;
   max-width: 800px;
   border-collapse: collapse;
   border-color: white;
   margin: 0 auto;
-  display: table; 
+  display: table;
   display: th;
   display: td;
 }
+
 .tabla-clases table,
 .tabla-clases th,
 .tabla-clases td {
-  border: 1px solid #D68FF4; /* Cambia el color si deseas */
+  border: 1px solid #D68FF4;
+  /* Cambia el color si deseas */
   border-collapse: collapse;
 }
+
 .clase {
-  text-align: center;
+  text-align: left;
   color: white;
 }
