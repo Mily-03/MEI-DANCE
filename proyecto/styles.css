@@ -24,11 +24,6 @@ body {
   text-align: center;
 }
 
-.container {
-  background-color: black;
-  color: white;
-}
-
 .meidance-intro {
   background-color: #000000;
   color: white;
@@ -80,8 +75,7 @@ body {
   border-color: white;
   margin: 0 auto;
   display: table;
-  display: th;
-  display: td;
+
 }
 
 .tabla-clases table,
@@ -96,3 +90,144 @@ body {
   text-align: left;
   color: white;
 }
+.video {
+  text-align: center;
+}
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 40px;
+  border-bottom: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  filter: drop-shadow(0 0 0.12px rgba(255, 255, 255, 0.8));
+}
+.navbar {
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;
+  gap: 40px;                /* Espacio entre los enlaces */
+  padding: 15px 40px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;  /* Cambia si quieres otro color */
+  font-family: popins, sans-serif; /* Cambia la fuente si es necesario */
+  font-weight: bolder;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  color: #df80e9; /* Efecto al pasar el mouse */
+}
+body {
+  padding: top 0;; /* Ajusta al alto real del header */
+}
+.founder-image{
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+.founder section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;;
+  height: auto /* Ajusta según tus imágenes */
+}
+.carrusel-container {
+  display: flex;
+  width: 300%;
+  animation: slide 60s infinite linear;
+}
+.carrusel-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+/* Animación del carrusel */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(/fonts/Cocogoose-Pro-Bold-trial.ttf) format('truetype');
+}
+.sentimientos {
+  background: linear-gradient(140deg, #000000cc, #300730cc);
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+.sentimientos h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.sentimientos p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.bienvenida h2 {
+  font-size: 50px;
+}
+#clases img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.clases img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.teclado-musical {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.teclado-musical button {
+  width: 80px;
+  height: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(145deg, #32073f, #0b0c18);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.teclado-musical button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #572d8f, #803c74);
+}
+
+
