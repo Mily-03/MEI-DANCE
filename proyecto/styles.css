@@ -229,5 +229,219 @@ html body {
   transform: scale(1.05);
   background: linear-gradient(145deg, #572d8f, #803c74);
 }
+.founder-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
 
+.founder-image img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 0;
+}
+
+.founder-details {
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Opcional: fondo para mejor lectura */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+  text-align: left;
+}
+.founder-section {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.btn-conocer {
+  display: inline-block;
+  background-color: #df80e9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-conocer:hover {
+  background-color: #b85acb;
+}
+.founder-details:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.fundadora {
+  background: linear-gradient(135deg, #df80e9 10%, #80d6ff 90%);
+  padding: 60px 20px;
+  color: white;
+}
+.frase-mailyn {
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff7fb;
+}
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-contenido {
+  background-color: #000;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.cerrar {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #000;
+}
+
+/* Botón */
+.btn-conocer {
+  display: block;
+  margin: 20px auto;
+  background-color: #df80e9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-conocer:hover {
+  background-color: #c766d1;
+}
+
+.filosofia-meidance {
+  padding: 40px 20px;
+  background-image: (url('/imagen/dance-5012264_1280.jpg'));
+}
+
+.filosofia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.filosofia-card {
+  background-color: rgb(0, 0, 0);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filosofia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(223, 128, 233, 0.3);
+}
+
+.filosofia-card h3 {
+  color: #df80e9;
+  margin-bottom: 15px;
+}
+.porque-meidance {
+  padding: 60px 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.razones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.razon {
+  background-color: black;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.razon:hover {
+  transform: translateY(-8px);
+}
+
+.razon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.razon h3 {
+  color: #df80e9;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.razon p {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+  .razones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.razon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* suavidad al hacer hover */
+}
+
+.razon:hover img {
+  transform: scale(2.0); /* agranda la imagen al 120% */
+}
 
