@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 
 <head>
   <meta charset="UTF-8">
@@ -12,79 +11,204 @@
 
 <body>
   <header class="main-header">
-        <div class="logo">
-          <img src="/imagen/Recurso 1@4x-100-Photoroom (2).png" alt="logo meidance" width="100">
-        </div>
-        <nav class="navbar">
-          <a href="inicio.html">Inicio</a>
-          <a href="meidance.html">Meidance</a>
-          <a href="clases.html">Clases</a>
-          <a href="contactanos.html">Contáctanos</a>
-        </nav>
+    <div class="logo">
+      <img src="/imagen/Recurso 1@4x-100-Photoroom (2).png" alt="logo meidance" width="100">
+    </div>
+    <nav class="navbar">
+      <a href="inicio.html">Inicio</a>
+      <a href="meidance.html">Meidance</a>
+      <a href="clases.html">Clases</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </nav>
   </header>
-  <div class="clase">
-    <img src="/imagen/salsa.png" alt="Clase de Salsa">
-    <h3>Salsa</h3>
-  </div>
-  <div class="clase">
-    <img src="/imagen/bachata.png" alt="Clase de Bachata">
-    <h3>Bachata</h3>
-  </div>
-  <div class="clase">
-    <img src="/imagen/hiphop.png" alt="Clase de Hip Hop">
-    <h3>Hip Hop</h3>
-    <ul>
-      <li style="text-align: left;"><strong>Descripción:</strong> Clases enérgicasque combina movimientos de baile urbano.</li>
-      <li style="text-align: left;"><strong>Requisitos:</strong> Ropa cómoda y ganas de bailar.</li>
-    </ul>
-  </div>
-  </div>
-  <section class="tabla-clases" style="text-align: center;">
-    <h2 style="font-family: Kirsty, sans-serif; letter-spacing: 2px;">HORARIOS DE CLASES</h2>
 
-    <div class="tabla-container">
-      <p>¡Descubre nuestros horarios de clases y elige la que más te guste!</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Día</th>
-            <th>Estilo</th>
-            <th>Horario</th>
-            <th>Edad Recomendada</th>
-          </tr>
-          <tr>
-            <td>Lunes</td>
-            <td>Hip Hop</td>
-            <td>16:00 - 17:00</td>
-            <td>Niños (6-12 años)</td>
-          </tr>
-          <tr>
-            <td>Martes</td>
-            <td>Ballet</td>
-            <td>17:00 - 18:00</td>
-            <td>Adolescentes</td>
-          </tr>
-          <tr>
-            <td>Miércoles</td>
-            <td>Salsa</td>
-            <td>18:00 - 19:00</td>
-            <td>Jóvenes y Adultos</td>
-          </tr>
-          <tr>
-            <td>Jueves</td>
-            <td>Jazz</td>
-            <td>16:30 - 17:30</td>
-            <td>Adolescentes</td>
-          </tr>
-          <tr>
-            <td>Viernes</td>
-            <td>TikTok Dances</td>
-            <td>17:30 - 18:30</td>
-            <td>Todos</td>
-          </tr>
-      </table>
-  </section>
+ <section class="clases-carrusel">
+  <h2>EXPLORA NUESTROS ESTILOS DE BAILE</h2>
+  <p>Desliza y conoce la experiencia única que cada clase te ofrece.</p>
+  <div class="carrusel">
+    <div class="item-carrusel">
+      <img src="/imagen/salsa2.png" alt="Clase de Salsa">
+      <div class="overlay">
+        <h3>Salsa</h3>
+        <p>Ritmos latinos que conectan el cuerpo<br>con la alegría del movimiento.</p>
+      </div>
+    </div>
+
+    <div class="item-carrusel">
+      <img src="/imagen/bachata3.png" alt="Clase de Bachata">
+      <div class="overlay">
+        <h3>Bachata</h3>
+        <p>Movimientos suaves, pasos sensuales<br> y conexión emocional.</p>
+      </div>
+    </div>
+
+    <div class="item-carrusel">
+      <img src="/imagen/hiphop2.png" alt="Clase de Hip Hop">
+      <div class="overlay">
+        <h3>Hip Hop</h3>
+        <p>Clases enérgicas que combinan<br>baile urbano con estilo personal.</p>
+      </div>
+    </div>
+
+    <div class="item-carrusel">
+      <img src="/imagen/ballet.png" alt="Clase de Ballet">
+      <div class="overlay">
+        <h3>Ballet</h3>
+        <p>Técnica y disciplina para perfeccionar<br>tu arte y postura.</p>
+      </div>
+    </div>
+
+    <div class="item-carrusel">
+      <img src="/imagen/jazz.png" alt="Clase de Jazz">
+      <div class="overlay">
+        <h3>Jazz</h3>
+        <p>Estilo dinámico y expresivo con<br>mucha energía y diversión.</p>
+      </div>
+    </div>
+
+    <div class="item-carrusel">
+      <img src="/imagen/tiktok2.png" alt="Clase de TikTok Dances">
+      <div class="overlay">
+        <h3>TikTok Dances</h3>
+        <p>Coreografías virales para que siempre estés a la moda.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<section class="test-baile">
+  <h2>¿Qué estilo de baile es para ti?</h2>
+  <p>Responde estas preguntas y descubre tu ritmo ideal 💃🕺</p>
+  
+  <form id="testForm">
+    <div class="pregunta">
+      <label>1. ¿Cómo prefieres moverte?</label><br>
+      <select name="movimiento">
+        <option value="urbano">Con pasos urbanos y enérgicos</option>
+        <option value="romantico">Sensualmente y con conexión</option>
+        <option value="tecnico">Con precisión y técnica</option>
+        <option value="libre">Con libertad y expresión total</option>
+        <option value="caribeño">Con ritmo tropical y sabor</option>
+      </select>
+    </div>
+
+    <div class="pregunta">
+      <label>2. ¿Qué música te hace vibrar?</label><br>
+      <select name="musica">
+        <option value="reggaeton">Reggaetón / Trap</option>
+        <option value="bachata">Bachata / Salsa</option>
+        <option value="clásica">Música clásica o instrumental</option>
+        <option value="afrobeat">Afrobeat o ritmos del mundo</option>
+        <option value="tiktok">Tendencias y virales de TikTok</option>
+      </select>
+    </div>
+
+    <div class="pregunta">
+      <label>3. ¿Qué buscas en una clase de baile?</label><br>
+      <select name="objetivo">
+        <option value="energía">Energía y cardio</option>
+        <option value="expresion">Expresar emociones</option>
+        <option value="conexion">Conectar con una pareja</option>
+        <option value="diversion">Diversión y creatividad</option>
+        <option value="disciplina">Disciplina y técnica</option>
+      </select>
+    </div>
+
+    <button type="button" onclick="descubrirEstilo()">Descubrir mi estilo</button>
+  </form>
+
+  <div id="resultadoEstilo" class="resultado"></div>
+</section>
+
+  <section class="tabla-clases">
+    <h2>HORARIOS DE CLASES</h2>
+    <p>¡Descubre nuestros horarios y vive la experiencia Meidance!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Estilo</th>
+          <th>Horario</th>
+          <th>Edad Recomendada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>Hip Hop</td>
+          <td>16:00 - 17:00</td>
+          <td>Niños (6-12 años)</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>Ballet</td>
+          <td>17:00 - 18:00</td>
+          <td>Adolescentes</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>Salsa</td>
+          <td>18:00 - 19:00</td>
+          <td>Jóvenes y Adultos</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>Jazz</td>
+          <td>16:30 - 17:30</td>
+          <td>Adolescentes</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>TikTok Dances</td>
+          <td>17:30 - 18:30</td>
+          <td>Todos</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+   <div style="text-align: center; margin: 40px;">
+      <a href="contactanos.html"
+        style="background-color: #8c3696; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; font-family: 'Poppins', sans-serif;">
+        ¡Inscríbete Hoy!
+      </a>
+    </div>
+   <footer class="footer" style="background-color: #111; color: white; padding: 30px 0; text-align: center;">
+        <p>&copy; 2025 MEIDANCE. Todos los derechos reservados.</p>
+        <div style="margin-top: 10px;">
+            <a href="#"><img src="/imagen/facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin: 0 10px;"></a>
+            <a href="#"><img src="/imagen/instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin: 0 10px;"></a>
+            <a href="#"><img src="/imagen/tiktok.png" alt="TikTok" style="width: 40px; height: 40px; margin: 0 10px;"></a>
+        </div>
+    </footer>
+    <script>
+function descubrirEstilo() {
+  const form = document.getElementById('testForm');
+  const movimiento = form.movimiento.value;
+  const musica = form.musica.value;
+  const objetivo = form.objetivo.value;
+
+  let estilo = "";
+
+  if (movimiento === "urbano" || musica === "reggaeton" || objetivo === "energía") {
+    estilo = "Hip Hop o Reggaetón";
+  } else if (movimiento === "romantico" || musica === "bachata" || objetivo === "conexion") {
+    estilo = "Bachata o Salsa";
+  } else if (movimiento === "tecnico" || musica === "clásica" || objetivo === "disciplina") {
+    estilo = "Ballet o Jazz";
+  } else if (movimiento === "libre" || objetivo === "expresion") {
+    estilo = "Contemporáneo o Danza Libre";
+  } else if (musica === "afrobeat") {
+    estilo = "Afrobeat o Danzas Urbanas del Mundo";
+  } else if (musica === "tiktok" || objetivo === "diversion") {
+    estilo = "Tiktok Dances o Coreografías Virales";
+  } else {
+    estilo = "¡Cualquier estilo! Tu pasión por el baile no tiene límites.";
+  }
+
+  document.getElementById('resultadoEstilo').innerHTML = `✨ Tu estilo ideal es: <strong>${estilo}</strong> ✨`;
+}
+</script>
+
 </body>
 
 </html>

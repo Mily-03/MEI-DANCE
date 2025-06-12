@@ -61,3 +61,4 @@ document.addEventListener("DOMContentLoaded", () => {
       oscilador.start();
       oscilador.stop(contexto.currentTime + 0.5);
     }
+    

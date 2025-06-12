@@ -418,14 +418,15 @@ html body {
 
 .razon h3 {
   color: #df80e9;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display',serif;
   margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .razon p {
   font-family: 'Poppins', sans-serif;
-  color: #333;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 /* Responsive para celulares */
@@ -445,3 +446,233 @@ html body {
   transform: scale(2.0); /* agranda la imagen al 120% */
 }
 
+.clases-carrusel {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.clases-carrusel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #663399;
+}
+
+.clases-carrusel p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background: #663399cc;
+  border-radius: 4px;
+}
+
+.item-carrusel {
+  position: relative;
+  min-width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.item-carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.item-carrusel:hover img,
+.item-carrusel:focus img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(102, 51, 153, 0.85);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  border-radius: 0 0 15px 15px;
+}
+
+.item-carrusel:hover .overlay,
+.item-carrusel:focus .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 0 0 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+  color: black;
+}
+
+.overlay p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  margin: 0;
+}
+
+.tabla-clases {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tabla-clases h2 {
+  color: #c94edf;
+  font-family: 'Playfair Display',serif;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #e5d4ed;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #df80e9;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #000000;
+}
+.test-baile {
+  background-color: #000000;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.test-baile h2 {
+  color: #df80e9;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.test-baile .pregunta {
+  margin: 20px 0;
+}
+
+.test-baile select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.test-baile button {
+  margin-top: 20px;
+  background-color: #df80e9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.test-baile button:hover {
+  background-color: #b85ecb;
+}
+
+.resultado {
+  margin-top: 30px;
+  font-size: 1.3em;
+  color: #5c1e77;
+  font-weight: bold;
+}
+
+.btn-volver-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-volver {
+  background: linear-gradient(to right, #a770ef, #df80e9);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(167, 112, 239, 0.4);
+}
+
+.btn-volver:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(167, 112, 239, 0.6);
+}
+.animacion-despedida {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  color: #a770ef;
+  opacity: 0;
+  animation: aparecer 2s ease-out forwards, rebote 1.5s infinite alternate;
+}
+
+/* Fade in y entrada suave */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rebote suave */
+@keyframes rebote {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
